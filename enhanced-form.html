@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Week 2 Assignment</title>
+</head>
+<body>
+
+<header position: fixed; top: 0;>
+    <h1>HTML Week 2 Assignment</h1>
+    <nav>
+        <a href="#lists">Lists</a> |
+        <a href="#tables">Tables</a> |
+        <a href="#media">Media</a> |
+        <a href="#form">HTML Form</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Lists -->
+    <section id="lists">
+        <h2>1. Lists</h2>
+        <p>Here are the modules we are currently learning on PLP:</p>
+        <ul>
+            <li>Python</li>
+            <li>Web development</li>
+            <li>Database development in SQL</li>
+            <li>Startup building</li>
+        </ul>
+
+        <p>Steps to make a cup of tea:</p>
+        <ol>
+            <li>Boil water</li>
+            <li>place a tea bag in a cup</li>
+            <li>Pour hot water into the cup</li>
+            <li>Add milk or sugar as desired</li>
+        </ol>
+
+        <p>Key Web Terms using definition lists:</p>
+        <dl>
+            <dt>HTML</dt><dd>HyperText Markup Language</dd>
+            <dt>CSS</dt><dd>Cascading Style Sheets</dd>
+            <dt>JS</dt><dd>JavaScript</dd>
+        </dl>
+    </section>
+
+    <!-- Tables -->
+    <section id="tables">
+        <h2>2. Tables</h2>
+        <table border="1" style="width: 20%;">
+            <caption>Student Grades</caption>
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>Math</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Science</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Carol</td>
+                    <td>History</td>
+                    <td>A-</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media -->
+    <section id="media">
+        <h2>3. Media</h2>
+        <p><b>1. Here’s a photo from my last vacation:</b></p>
+        <img src="https://images.pexels.com/photos/4321085/pexels-photo-4321085.jpeg" alt="Bird's eye Beach view" width="300">
+        <br><br><br>
+
+        <p><b>2. Here's a relaxing audio clip of bird sounds:</b></p>
+        <audio controls>
+            <source src="https://cdn.pixabay.com/audio/2023/11/19/audio_7b0aa5c1dc.mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p><b>3. And here's a dashboard video of driving on a mountaneous road:</b></p>
+        <video controls width="320">
+            <source src="https://videos.pexels.com/video-files/4434242/4434242-uhd_1440_2560_24fps.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Form -->
+    <section id="form">
+        <h2>4. HTML Form</h2>
+        <form action="submit.html" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" 
+                        pattern="[A-Za-z\s]+" title="Please enter letters only" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>
+                    <input type="radio" name="subscription" value="weekly" required> Weekly Newsletter
+                </label>
+                <label>
+                    <input type="radio" name="subscription" value="monthly"> Monthly Newsletter
+                </label><br><br>
+
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" id="favcolor" name="favcolor"><br><br>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Security</legend>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+                <label for="confirmpw">Confirm Password:</label>
+                <input type="password" id="confirmpw" name="confirmpw" minlength="8" required>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
